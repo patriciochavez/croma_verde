@@ -59,9 +59,9 @@ public class CopyPixels : MonoBehaviour {
             Color pixel = webcam_pixels[i];
             if (pixel.r < rojo && pixel.g > verde && pixel.b < azul)
             {
-                compound_pixels[i] = webcam_pixels[i];              
+                compound_pixels[i] = source_pixels[i];              
             } else {
-                compound_pixels[i] = source_pixels[i];
+                compound_pixels[i] = webcam_pixels[i];
             }
         }
         
