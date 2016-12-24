@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\CopyPixels.cs" />
     <Compile Include="Assets\Scripts\LoadTexture.cs" />
     <Compile Include="Assets\Scripts\LoadWebCam.cs" />
+    <Compile Include="Assets\Scripts\Move_Sphere.cs" />
     <Compile Include="Assets\Scripts\Textura2DGetPixels.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

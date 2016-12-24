@@ -37,15 +37,16 @@ public class CopyPixels : MonoBehaviour {
         destinationT2D = new Texture2D(640, 480);
         compoundT2D = new Texture2D(640, 480);
 
-        sourceT2D = CopyTexture(640, 480);
-        sourceT2D.Apply();
-        destination.material = destinationMat;
+        
 
     }
 	
 	//Update is called once per frame
 	void Update () {
-       
+        sourceT2D = CopyTexture(640, 480);
+        sourceT2D.Apply();
+        destination.material = destinationMat;
+
        Color[] source_pixels = sourceT2D.GetPixels();
        Color[] webcam_pixels = WCTexture.GetPixels();
        Color[] compound_pixels = new Color[307200];
